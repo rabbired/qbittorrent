@@ -1,4 +1,4 @@
-FROM linuxserver/qbittorrent as builder
+FROM linuxserver/qbittorrent:amd64-latest as builder
 
 RUN apt-get update && \
 	apt-get install --yes python3 python3-pip && \
