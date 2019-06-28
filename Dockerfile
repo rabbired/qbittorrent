@@ -1,6 +1,6 @@
 FROM linuxserver/qbittorrent:amd64-latest as builder
 
-RUN apt update && apt upgrade --yes \
+RUN apt update && apt upgrade --yes && \
 	apt install --yes python3 python3-pip && \
 	update-alternatives --install /usr/bin/python python /usr/bin/python2 100 && \
 	update-alternatives --install /usr/bin/python python /usr/bin/python3 150 && \
