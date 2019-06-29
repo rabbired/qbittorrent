@@ -1,4 +1,4 @@
-# for linuxserver/qbittorrent
+# from linuxserver/qbittorrent
 ###
 # qBittorrent + autoremove-torrents + FlexGet
 
@@ -17,14 +17,13 @@ docker create \
   -v /path/to/downloads:/downloads \
   --restart unless-stopped \
   rabbired/qbittorrent \
-  flexget daemon start --daemonize
 
 # jerrymakesjelly/autoremove-torrents
 https://github.com/jerrymakesjelly/autoremove-torrents
 
 docker exec "name" autoremove-torrents --confg="" --log=""
 
-# FlexGet set and run
+# FlexGet set
 
 # make /path/to/appdata/config/flexget/config.yml
 

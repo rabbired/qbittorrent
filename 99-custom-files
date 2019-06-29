@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv bash
+
+echo "Run FlexGet daemon"
+/usr/bin/flexget daemon start --daemonize

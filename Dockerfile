@@ -12,3 +12,5 @@ RUN apt update && apt upgrade --yes && \
 		/tmp/* \
 		/var/lib/apt/lists/* \
 		/var/tmp/*
+
+COPY 99-custom-files /etc/cont-init.d/99-custom-files
