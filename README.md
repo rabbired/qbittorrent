@@ -16,7 +16,7 @@ docker create \
   -v /path/to/appdata/config:/config \
   -v /path/to/downloads:/downloads \
   --restart unless-stopped \
-  rabbired/qbittorrent \
+  rabbired/qbittorrent
 
 # jerrymakesjelly/autoremove-torrents
 https://github.com/jerrymakesjelly/autoremove-torrents
