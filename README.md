@@ -1,6 +1,7 @@
 # from linuxserver/qbittorrent
 ###
 # qBittorrent + autoremove-torrents + FlexGet
+#add https://github.com/ausaki/subfinder
 
 docker create \
   --name=qbittorrent \
