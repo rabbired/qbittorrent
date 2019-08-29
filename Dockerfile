@@ -7,6 +7,7 @@ RUN apt update && apt upgrade --yes && \
 	ln -s /usr/bin/pip3 /bin/pip && \
 	pip install autoremove-torrents && \
 	pip install flexget && \
+        pip install subfinder && \
 	apt clean && \
 	rm -rf \
 		/tmp/* \
