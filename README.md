@@ -1,7 +1,7 @@
 # from linuxserver/qbittorrent
 ###
-# qBittorrent + autoremove-torrents + FlexGet
-#add https://github.com/ausaki/subfinder
+## qBittorrent + autoremove-torrents + FlexGet
+add https://github.com/ausaki/subfinder
 
 docker create \
   --name=qbittorrent \
@@ -19,19 +19,20 @@ docker create \
   --restart unless-stopped \
   rabbired/qbittorrent
 
-# jerrymakesjelly/autoremove-torrents
-https://github.com/jerrymakesjelly/autoremove-torrents
+## jerrymakesjelly/autoremove-torrents
+add https://github.com/jerrymakesjelly/autoremove-torrents
 
 docker exec "name" autoremove-torrents --confg="" --log=""
 
-# FlexGet set
+###
+## FlexGet set
 
-# make /path/to/appdata/config/flexget/config.yml
+make /path/to/appdata/config/flexget/config.yml
 
-# set webui passwd
+## set webui passwd
 
 docker exec "name" flexget web passwd "passwd"
 
-# stop flexget
+## stop flexget
 
 docker exec "name" flexget daemon stop
